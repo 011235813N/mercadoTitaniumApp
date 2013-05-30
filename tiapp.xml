@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="ti.android.threadstacksize" type="int">32768</property>
+    <property name="ti.android.runtime">rhino</property>
+    <property name="acs-oauth-secret-production" type="string">JEidamGuVx1Umhh4FEPidEpGvYZs8Nxw</property>
+    <property name="acs-oauth-key-production" type="string">QUglwE38fD2TTpMLdbmM3a6t4ryUiiRI</property>
+    <property name="acs-api-key-production" type="string">l1J9DdqWOZ3XCUc67XVygw5TVlbWFuJn</property>
+    <property name="acs-oauth-secret-development" type="string">DiYqAMMummKky6QDgIJyN5WonYsyxrdu</property>
+    <property name="acs-oauth-key-development" type="string">t3GvcO7mE7xLFA1d3u6aI2GpP6bNIflr</property>
+    <property name="acs-api-key-development" type="string">V9ARBmxGVbGpYbrgeNUTNiSICdTr8wtP</property>
+    <deployment-targets>
+        <target device="tizen">false</target>
+        <target device="mobileweb">false</target>
+        <target device="iphone">false</target>
+        <target device="ipad">false</target>
+        <target device="blackberry">false</target>
+        <target device="android">true</target>
+    </deployment-targets>
+    <sdk-version>2.1.2.GA</sdk-version>
+    <id>com.ernestoascencio.dev</id>
+    <name>Mercado</name>
+    <version>1</version>
+    <publisher>Ernesto Ascencio</publisher>
+    <url>https://twitter.com/011235813N</url>
+    <description>Haz tus compras en el mercado mas cercano, con esta lista de compras sencilla y facil de usar.</description>
+    <copyright>2013</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>true</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>true</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>7e753c55-d71a-4524-bb24-837083058bef</guid>
+    <property name="ti.android.google.map.api.key.development" type="string">07WxMEE82_thQUpwaWmJfjuaEOELc0t7ua5hnlw</property>
+    <property name="ti.android.google.map.api.key.production" type="string">07WxMEE82_tjqE7UpmJu2X0qTXISr6_ibjAEEGg</property>
+    <property name="ti.ui.defaultunit">system</property>
+    <property name="ti.android.bug2373.DisableDetection" type="bool">False</property>
+    <property name="ti.android.bug2373.skipAlert" type="bool">true</property>
+    <property name="ti.android.bug2373.message"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:installLocation="auto" android:versionCode="9" android:versionName="4.0.5">
+            <supports-screens android:anyDensity="False"/>
+        </manifest>
+    </android>
+    <modules>
+        <module platform="android" version="2.0.7">ti.cloudpush</module>
+        <module platform="commonjs" version="2.3.0">ti.cloud</module>
+    </modules>
+</ti:app>
